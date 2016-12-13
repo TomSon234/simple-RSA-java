@@ -88,5 +88,10 @@ public class Main {
         System.out.println("result of (d*e)%m = " + (d*e)%m);
 
         System.out.println("Private key d: " + d + " i n: " + n);
+
+        //encrypt:      c=m^e%n
+        //decrypt:      m=c^d%n
+        //sign:         s=m^d%n
+        //verification: v=s^e%n  (if v=m -> correct)
     }
 }
